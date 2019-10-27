@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Layout from './layout';
+import Counter from './components/Counter';
 
 function App() {
+  // const [count, setCount] = useState(20);
+
+  // const increment = () => {
+  //   const newCount = count + 1;
+  //   setCount(newCount);
+  // };
+
+  // const decriment = () => {
+  //   if (count === 0) {
+  //     alert('Value cannot be less than 0');
+  //     return;
+  //   }
+
+  //   const newCount = count - 1;
+  //   setCount(newCount);
+  // };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout />
     </div>
   );
 }
